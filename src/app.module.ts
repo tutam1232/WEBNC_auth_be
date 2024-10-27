@@ -8,7 +8,8 @@ import { HomeController } from './home/home.controller';
 
 @Module({
   imports: [AuthModule, UsersModule, ConfigModule.forRoot({
-    isGlobal: true
+    isGlobal: true,
+    envFilePath: '.env'
   })],
   controllers: [AppController, HomeController],
   providers: [AppService],
