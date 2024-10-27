@@ -1,6 +1,6 @@
 import { Controller, Post, Body, HttpCode, HttpStatus, UseInterceptors } from '@nestjs/common';
 import { AuthService } from './auth.service';
-import { CreateUserDto } from 'src/users/dto/create-user.dto';
+import { CreateUserDto } from '../users/dto/create-user.dto';
 import { TransformInterceptor } from '../common/interceptors/transform.interceptor';
 
 @Controller('user')

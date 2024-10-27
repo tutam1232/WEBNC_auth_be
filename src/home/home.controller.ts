@@ -1,6 +1,6 @@
 import { Controller, Get, HttpCode, HttpStatus, UseInterceptors, UseGuards } from '@nestjs/common';
 import { TransformInterceptor } from '../common/interceptors/transform.interceptor';
-import { AuthGuard } from 'src/auth/auth.guard';
+import { AuthGuard } from '../auth/auth.guard';
 
 @Controller('home')
 export class HomeController {
